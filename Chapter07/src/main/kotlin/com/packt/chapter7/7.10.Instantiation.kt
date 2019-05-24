@@ -4,7 +4,7 @@ import java.nio.file.Files
 import java.nio.file.Paths
 import java.util.*
 import kotlin.reflect.KClass
-import kotlin.reflect.createInstance
+import kotlin.reflect.full.createInstance
 
 class PositiveInteger(value: Int = 0)
 

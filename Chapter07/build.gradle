@@ -14,8 +14,7 @@ buildscript {
 }
 
 apply plugin: 'kotlin'
-apply plugin: 'application'
-mainClassName = "com.programming.kotlin.chapter06.ProgramKt"
+apply plugin: 'java'
 
 repositories {
     maven { url "https://dl.bintray.com/kotlin/kotlin-dev" }
@@ -27,14 +26,4 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     compile "joda-time:joda-time:2.3"
 
-}
-
-jar {
-    manifest {
-        attributes(
-                'Main-Class': 'com.programming.kotlin.chapter06.ProgramKt'
-        )
-    }
-
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }

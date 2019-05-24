@@ -14,12 +14,12 @@ fun main(args: Array<String>) {
 
 val map = mutableMapOf<Int, Long>()
 
-fun memfib(k: Int): Long {
+fun fib(k: Int): Long {
   return map.getOrPut(k) {
     when (k) {
       0 -> 1
       1 -> 1
-      else -> memfib(k - 1) + memfib(k - 2)
+      else -> fib(k - 1) + fib(k - 2)
     }
   }
 }

@@ -1,9 +1,5 @@
 package com.packt.chapter5
 
-fun higherorder() {
-
-}
-
 fun foo(value: String, function: (String) -> String): Unit = println(function(value))
 
 fun invokeFoo() {

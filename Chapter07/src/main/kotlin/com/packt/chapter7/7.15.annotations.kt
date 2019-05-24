@@ -8,7 +8,6 @@ package com.packt.chapter7
     AnnotationTarget.TYPE,
     AnnotationTarget.VALUE_PARAMETER,
     AnnotationTarget.PROPERTY,
-    AnnotationTarget.EXPRESSION,
     AnnotationTarget.TYPEALIAS)
 annotation class Foo
 
@@ -35,11 +34,6 @@ class PropertyClass {
 }
 
 class Bar @Foo constructor(name: String)
-
-fun expressionAnnotation(): Int {
-  val str = @Foo "hello foo"
-  return (@Foo 123)
-}
 
 annotation class Description(val summary: String)
 

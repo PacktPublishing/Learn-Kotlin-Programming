@@ -1,6 +1,6 @@
 package com.packt.chapter2
 
-fun main(args: Array<String>) {
+fun main() {
   val array = arrayOf(1, 2, 3)
 
   val element1 = array[0]
